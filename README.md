@@ -14,7 +14,7 @@ jar and Docker image and can be run via `docker`:
 
 ```shell script
 $ mvn clean package
-$ docker run --rm -p 8080:8080 helidon-showcase:0
+$ docker run --rm -p 8080:8080 helidon-showcase
 ```
 
 If everything works you can access the OpenAPI UI via http://localhost:8080/swagger-ui.

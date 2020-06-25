@@ -28,7 +28,7 @@ public abstract class AbstractIntegrationTest {
 
   protected static final Network NETWORK = Network.newNetwork();
 
-  protected static final GenericContainer APPLICATION = new GenericContainer("helidon-showcase:0")
+  protected static final GenericContainer<?> APPLICATION = new GenericContainer<>("helidon-showcase")
       .withExposedPorts(8080)
       .withNetwork(NETWORK)
       .withNetworkAliases(NETWORK_ALIAS_APPLICATION)
