@@ -1,5 +1,8 @@
 # Helidon Showcase
 
+[![GitHub last commit](https://img.shields.io/github/last-commit/stephan-mueller/helidon-showcase)](https://github.com/stephan-mueller/helidon-showcase/commits) 
+[![GitHub](https://img.shields.io/github/license/stephan-mueller/helidon-showcase)](https://github.com/stephan-mueller/helidon-showcase/blob/master/LICENSE)
+
 This is a showcase for the microservice framework [Helidon v2](https://helidon.io). It contains a hello world application, which demonstrates several features of Helidon and Eclipse Microprofile
 
 Software requirements to run the samples are `maven`, `openjdk-11` (or any other JDK 11) and `docker`.
