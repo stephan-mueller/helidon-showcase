@@ -131,6 +131,9 @@
                 <version>1.4.13</version>
                 <configuration>
                     <repository>${project.build.finalName}</repository>
+                    <buildArgs>
+                        <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
+                    </buildArgs>
                     <skipDockerInfo>true</skipDockerInfo>
                 </configuration>
                 <executions>
