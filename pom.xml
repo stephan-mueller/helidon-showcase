@@ -33,6 +33,10 @@
         <version.cucumber>4.8.0</version.cucumber>
         <version.rest-assured>4.0.0</version.rest-assured>
         <version.hamcrest>2.1</version.hamcrest>
+
+        <sonar.projectKey>stephan-mueller_helidon-showcase</sonar.projectKey>
+        <sonar.organization>stephan-mueller</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <build>

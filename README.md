@@ -2,6 +2,8 @@
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/stephan-mueller/helidon-showcase)](https://github.com/stephan-mueller/helidon-showcase/commits) 
 [![GitHub](https://img.shields.io/github/license/stephan-mueller/helidon-showcase)](https://github.com/stephan-mueller/helidon-showcase/blob/master/LICENSE)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=stephan-mueller_helidon-showcase&metric=alert_status)](https://sonarcloud.io/dashboard?id=stephan-mueller_helidon-showcase)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=stephan-mueller_helidon-showcase&metric=coverage)](https://sonarcloud.io/dashboard?id=stephan-mueller_helidon-showcase)
 
 This is a showcase for the microservice framework [Helidon v2](https://helidon.io). It contains a hello world application, which demonstrates several features of Helidon and Eclipse Microprofile
 
