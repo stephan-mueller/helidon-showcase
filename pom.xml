@@ -18,7 +18,7 @@
 
         <timestamp>${maven.build.timestamp}</timestamp>
 
-        <version.helidon>2.0.0-M3</version.helidon>
+        <version.helidon>2.0.1</version.helidon>
 
         <version.microprofile-ext>1.0.5</version.microprofile-ext>
 
