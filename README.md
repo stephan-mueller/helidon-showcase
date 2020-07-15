@@ -5,12 +5,18 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=stephan-mueller_helidon-showcase&metric=alert_status)](https://sonarcloud.io/dashboard?id=stephan-mueller_helidon-showcase)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=stephan-mueller_helidon-showcase&metric=coverage)](https://sonarcloud.io/dashboard?id=stephan-mueller_helidon-showcase)
 
-This is a showcase for the microservice framework [Helidon v2](https://helidon.io). It contains a hello world application, which demonstrates several features of Helidon and Eclipse Microprofile
+This is a showcase for the microservice framework [Helidon v2](https://helidon.io). It contains a hello world application, 
+which demonstrates several features of Helidon and Eclipse Microprofile
 
-Software requirements to run the samples are `maven`, `openjdk-11` (or any other JDK 11) and `docker`.
-When running the Maven lifecycle it will create the war package and use the `helidon-maven-plugin` to create a runnable 
-jar (fat jar) which contains the application and the Jetty container. The fat jar will be copied into a
-Docker image using Spotify's `dockerfile-maven-plugin` during the package phase.
+Software requirements to run the samples are `maven`, `openjdk-11` (or any other JDK 11) and `docker`. When running the Maven lifecycle 
+it will create the war package and use the `helidon-maven-plugin` to create a runnable jar (fat jar) which contains the application 
+and the Jetty container. The fat jar will be copied into a Docker image using Spotify's `dockerfile-maven-plugin` during the package phase.
+
+**Notable Features:**
+* Integration of MP Health, MP Metrics and MP OpenAPI
+* Testcontainer-Tests with Rest-Assured, Cucumber and Postman/newman
+* Code-Coverage for Testcontainer-Tests
+* [Sonarcloud](https://sonarcloud.io) Integration
 
 ## How to run
 
