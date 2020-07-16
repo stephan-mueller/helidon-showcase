@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y curl
 
 RUN mkdir -p /opt/helidon
 
-ARG JAR_FILE
+ARG JAR_FILE=helidon-showcase.jar
 COPY target/${JAR_FILE} /opt/helidon/application.jar
 COPY target/libs /opt/helidon/libs
 
