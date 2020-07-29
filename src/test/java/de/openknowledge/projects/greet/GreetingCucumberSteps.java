@@ -16,6 +16,9 @@
 package de.openknowledge.projects.greet;
 
 import org.hamcrest.Matchers;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testcontainers.containers.output.Slf4jLogConsumer;
 
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -29,9 +32,11 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
 
 /**
- * Step Definitions for the cucumber test {@link GreetResourceCucumberIT}.
+ * Step Definitions for the cucumber test {@link GreetingCucumberIT}.
  */
-public class GreetResourceCucumberSteps {
+public class GreetingCucumberSteps extends AbstractIntegrationTest {
+
+  private static final Logger LOG = LoggerFactory.getLogger(GreetingCucumberSteps.class);
 
   private RequestSpecification requestSpecification;
 
@@ -39,8 +44,10 @@ public class GreetResourceCucumberSteps {
 
   @Before
   public void beforeScenario() {
+    APPLICATION.withLogConsumer(new Slf4jLogConsumer(LOG));
+
     requestSpecification = new RequestSpecBuilder()
-        .setPort(GreetResourceCucumberTestContainerBaseClass.getContainer().getFirstMappedPort())
+        .setPort(APPLICATION.getFirstMappedPort())
         .build();
   }
 
